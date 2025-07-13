@@ -1,10 +1,11 @@
-document.getElementById("header").innerHTML = `
+document.getElementById("navigation").innerHTML = `
     <div id="topnav">
-        <a href="/">Home</a>
-        <a href="/releases">Music</a>
-        <a href="/about">About</a>
-        <a href="https://cpi.maxiroon.xyz/">Community Picked Islands</a>
-        <a class="ethereal" href="/releases/msm/hypernatural">Hypernaturals</a>
+        <a class="plasma" href="/h1">Plasma Passage</a>
+        <a class="shadow" href="/h2">Shadow ???</a>
+        <a class="mech" href="/h3">Mech ???</a>
+        <a class="crystal" href="/h4">Crystal ???</a>
+        <a class="poison" href="/h5">Poison ???</a>
+        <a href="https://maxiroon.xyz/">Main Site</a>
     </div>`;
 
 document.getElementById("footer").innerHTML = `

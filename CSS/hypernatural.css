@@ -4,13 +4,22 @@
     box-sizing: border-box;
 }
 
+@font-face {
+  font-family: 'OpenDyslexic';
+  src: url('/media/font/OpenDyslexic.eot'); /* IE9 Compat Modes */
+  src: url('/media/font/OpenDyslexic.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('/media/font/OpenDyslexic.woff2') format('woff2'), /* Super Modern Browsers */
+       url('/media/font/OpenDyslexic.woff') format('woff'), /* Pretty Modern Browsers */
+       url('/media/font/OpenDyslexic.ttf')  format('truetype'), /* Safari, Android, iOS */
+}
+
 
 #topnav {
     background-image: linear-gradient(#6e6c3f, #233f46);
     overflow: hidden;
     font-family: OpenDyslexic;
     font-weight: bold;
-    height: 50px;
+    height: 49px;
     object-fit: fill;
     transition: top 0.3s;
     position: fixed;
@@ -27,20 +36,31 @@
     font-size: 17px;
 
 }
-
+#topnav a.plasma {
+    background-image: linear-gradient(#889be1, #643ea5);
+}
+#topnav a.shadow {
+    background-image: linear-gradient(#cda0ad, #835254);
+}
+#topnav a.mech {
+    background-image: linear-gradient(#bbbbbb, #9a9a9a);
+}
+#topnav a.crystal {
+    background-image: linear-gradient(#41d0ce, #3a6200);
+}
+#topnav a.poison {
+    background-image: linear-gradient(#dee543, #2c2e00);
+}
 #topnav a:hover {
-    background-image: linear-gradient(#ebe78a, #3e717d);
-    color: white;
+    background-image: linear-gradient(white, white);
+    color: black;
 }
 
-
-@font-face {
-  font-family: 'OpenDyslexic';
-  src: url('/media/font/OpenDyslexic.eot'); /* IE9 Compat Modes */
-  src: url('/media/font/OpenDyslexic.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-       url('/media/font/OpenDyslexic.woff2') format('woff2'), /* Super Modern Browsers */
-       url('/media/font/OpenDyslexic.woff') format('woff'), /* Pretty Modern Browsers */
-       url('/media/font/OpenDyslexic.ttf')  format('truetype'), /* Safari, Android, iOS */
+#scrolldown {
+    transition: top 0.3s;
+    position: fixed;
+    top: 50;
+    width: 100%;
 }
 
 body {
@@ -73,143 +93,52 @@ h1 {
     width: 90%;
     text-align: left;
 }
-.button1 a {
+.button a{
     text-decoration: none;
     border: 5px solid;
+    border-image-slice: 1;
+    padding: 15px 32px;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    font-weight: bold;
+    color: white;
+    
+}
+.button a.ethereal {
+    background-image: linear-gradient(#afad62, #3e717d);
+    border: 5px solid white;
+}
+.button a.plasma {
     border-image-source: linear-gradient(to bottom, #ebe78a, #3e717d);
     background-image: linear-gradient(#889be1, #643ea5);
-    border-image-slice: 1;
-    padding: 15px 32px;
-    text-align: center;
-    display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
-    cursor: pointer;
-    border-radius: 12px;
-    font-weight: bold;
-    color: white;
     
 }
 
-.button1 a:hover {
-    background-image: linear-gradient(white, white);
-    color: black;
-}
-
-.button0 a {
-    text-decoration: none;
-    border: 5px solid white;
-    background-image: linear-gradient(#ebe78a, #3e717d);
-    border-image-slice: 1;
-    padding: 15px 32px;
-    text-align: center;
-    display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
-    cursor: pointer;
-    font-weight: bold;
-    color: white;
-    width: 80%;
-    border-radius: 12px;
-    
-}
-
-.button0 a:hover {
-    background-image: linear-gradient(white, white);
-    color: black;
-}
-
-.button2 a {
-    text-decoration: none;
-    border: 5px solid;
+.button a.shadow {
     border-image-source: linear-gradient(to bottom, #ebe78a, #3e717d);
     background-image: linear-gradient(#cda0ad, #835254);
-    border-image-slice: 1;
-    padding: 15px 32px;
-    text-align: center;
-    display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
-    cursor: pointer;
-    border-radius: 12px;
-    font-weight: bold;
-    color: white;
     
 }
-
-.button2 a:hover {
-    background-image: linear-gradient(white, white);
-    color: black;
-}
-
-.button3 a {
-    text-decoration: none;
-    border: 5px solid;
+.button a.mech {
     border-image-source: linear-gradient(to bottom, #ebe78a, #3e717d);
     background-image: linear-gradient(#bbbbbb, #9a9a9a);
-    border-image-slice: 1;
-    padding: 15px 32px;
-    text-align: center;
-    display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
-    cursor: pointer;
-    border-radius: 12px;
-    font-weight: bold;
-    color: white;
-    
-}
 
-.button3 a:hover {
-    background-image: linear-gradient(white, white);
-    color: black;
 }
-
-.button4 a {
-    text-decoration: none;
-    border: 5px solid;
+.button a.crystal {
     border-image-source: linear-gradient(to bottom, #ebe78a, #3e717d);
     background-image: linear-gradient(#41d0ce, #3a6200);
-    border-image-slice: 1;
-    padding: 15px 32px;
-    text-align: center;
-    display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
-    cursor: pointer;
-    border-radius: 12px;
-    font-weight: bold;
-    color: white;
     
 }
-
-.button4 a:hover {
-    background-image: linear-gradient(white, white);
-    color: black;
-}
-
-.button5 a {
-    text-decoration: none;
-    border: 5px solid;
+.button a.poison {
     border-image-source: linear-gradient(to bottom, #ebe78a, #3e717d);
     background-image: linear-gradient(#dee543, #2c2e00);
-    border-image-slice: 1;
-    padding: 15px 32px;
-    text-align: center;
-    display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
-    cursor: pointer;
-    border-radius: 12px;
-    font-weight: bold;
-    color: white;
     
 }
+.button a:hover { background-image: linear-gradient(white, white); color: black; }
 
-.button5 a:hover {
-    background-image: linear-gradient(white, white);
-    color: black;
-}
 
 footer {
     background-image: linear-gradient(to right, #6e6c3f, #233f46);
@@ -231,7 +160,7 @@ footer {
 .four0four a.button {
     text-decoration: none;
     border: 5px solid white;
-    background-image: linear-gradient(#ebe78a, #3e717d);
+    background-image: linear-gradient(#afad62, #3e717d);
     border-image-slice: 1;
     padding: 15px 32px;
     text-align: center;
