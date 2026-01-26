@@ -2,10 +2,8 @@ var prevScrollpos = window.pageYOffset;
 window.onscroll = function() {
   var currentScrollPos = window.pageYOffset;
   if (prevScrollpos > currentScrollPos) {
-    document.getElementById("scrolldown").style.top = "50px";
     document.getElementById("topnav").style.top = "0";
   } else {
-    document.getElementById("scrolldown").style.top = "-65px";
     document.getElementById("topnav").style.top = "-50px";
   }
   prevScrollpos = currentScrollPos;

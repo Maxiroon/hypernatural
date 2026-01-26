@@ -1,10 +1,10 @@
 document.getElementById("navigation").innerHTML = `
     <div id="topnav">
         <a class="plasma" href="/h1">Plasma Passage</a>
-        <a class="shadow" href="/h2">Shadow ???</a>
-        <a class="mech" href="/h3">Mech ???</a>
-        <a class="crystal" href="/h4">Crystal ???</a>
-        <a class="poison" href="/h5">Poison ???</a>
+        <!-- <a class="shadow" href="/h2">Shadow ???</a> -->
+        <a class="mech" href="/h3">Mech Manor</a>
+        <!-- <a class="crystal" href="/h4">Crystal ???</a>
+        <a class="poison" href="/h5">Poison ???</a> -->
         <a href="https://maxiroon.xyz/">Main Site</a>
     </div>`;
 
